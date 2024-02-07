@@ -8,6 +8,6 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 #Will put some interaction form
 
-streamlit.multiselect("Pick something from here:", list(my_fruit_list.index))
+streamlit.multiselect("Pick something from here:", list(my_fruit_list.index),['Avocado','Apple'])
 
 streamlit.dataframe(my_fruit_list)
